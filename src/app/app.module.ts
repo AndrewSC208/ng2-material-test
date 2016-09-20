@@ -3,16 +3,22 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { HomeComponent } from './home/home.component';
+import { MdButtonModule } from '@angular2-material/button';
+
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MdButtonModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
